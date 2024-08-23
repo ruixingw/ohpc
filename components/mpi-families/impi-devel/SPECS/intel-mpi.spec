@@ -65,7 +65,7 @@ mkdir -p %{buildroot}/%{OHPC_MODULEDEPS}/gnu/impi
 mkdir -p %{buildroot}/%{OHPC_MODULEDEPS}/gnu%{gnu_major_ver}/impi
 
 %pre
-if ! [ -d /opt/intel/oneapi/mpi/latest/modulefiles ]; then
+if ! [ -d /opt/intel/oneapi/mpi/latest/etc/modulefiles ]; then
     echo " "
     echo "Error: Unable to detect the oneAPI MPI installation at /opt/intel."
     echo " "
